@@ -12,7 +12,7 @@ import com.lorinta.newproject.databinding.ActivityMainBinding
 import okhttp3.*
 import java.io.IOException
 
-private val discordWebhookURL = "https://discord.com/api/webhooks/1311135534726254613/XYf8c_tHwsrMxfThkxjRyeWL9P-kchu9fIuMf0NVJkJ6_a7zk0U5Fmz62ed8xO_Vjvvc" // Set your Discord webhook URL here
+private val discordWebhookURL = "https://discord.com/api/webhooks/" // Set your Discord webhook URL here
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
