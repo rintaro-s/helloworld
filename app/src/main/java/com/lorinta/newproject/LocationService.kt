@@ -18,7 +18,7 @@ import android.content.Context
 import java.util.*
 import android.content.pm.PackageManager
 
-private val discordWebhookURL = "https://discord.com/api/webhooks/1311135534726254613/XYf8c_tHwsrMxfThkxjRyeWL9P-kchu9fIuMf0NVJkJ6_a7zk0U5Fmz62ed8xO_Vjvvc"
+private val discordWebhookURL = "https://discord.com/api/webhook URL"
 
 class LocationService : Service() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
