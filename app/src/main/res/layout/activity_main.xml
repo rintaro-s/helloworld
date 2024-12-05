@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".MainActivity">
+
+    <!-- Scrollable section for terms of service -->
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/agreeButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- TextView inside ScrollView to display terms of service -->
+        <TextView
+                android:id="@+id/tosText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="利用規約\n\n第1条 (目的)\n本利用規約は、当方が提供するサービスの利用条件を定めるものです。\n\n第2条 (適用範囲)\n本利用規約は、当方のサービスを利用するすべての方に適用されます。\n\n第3条 (サービスの内容)\n1. 当方が提供するサービスの内容は、当方の判断により変更される場合があります。\n2. サービスの内容、仕様、機能等は予告なく変更される場合があります。\n\n第4条 (利用者の責任)\n1. サービスの利用は全て利用者の責任において行われるものとします。\n2. 未成年の方は保護者の同意を得た上で利用してください。\n3. 利用者は関連法規を遵守し、他者の権利を侵害しない方法でサービスを利用するものとします。\n\n第5条 (免責事項)\n1. 当方は、サービスの中断、停止、終了により生じた損害について一切責任を負いません。\n2. サービスの利用により生じた損害について、当方は一切責任を負いません。\n3. 当方は、サービスの内容、仕様、機能等の変更により生じた損害について一切責任を負いません。\n\n第6条 (知的財産権)\nサービスに含まれる著作権、商標権等の知的財産権は当方または当方にライセンスを許諾している第三者に帰属します。\n\n第7条 (禁止事項)\n利用者は、以下の行為を行ってはなりません。\n1. 法令または公序良俗に反する行為\n2. 当方または第三者の権利を侵害する行為\n3. サービスの運営を妨害する行為\n\n第8条 (利用の停止・制限)\n当方は、利用者が本規約に違反した場合、事前の通知なくサービスの利用を停止または制限することができます。\n\n第9条 (準拠法・管轄裁判所)\n本利用規約の解釈及び適用については日本法が適用されるものとし、利用者と当方との間の紛争については伊勢簡易裁判所を管轄裁判所とします。\n\n Shigeno Rintaro 2024."
+                android:textSize="16sp"
+                android:padding="10dp"/>
+    </ScrollView>
+
+    <!-- Agree button -->
+    <Button
+            android:id="@+id/agreeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意する"
+            app:layout_constraintTop_toBottomOf="@id/scrollView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
